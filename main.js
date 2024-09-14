@@ -28,3 +28,18 @@ if (numero % 2 === 0) {
 } else {
   console.log("El número " + numero + " es impar");
 };
+
+// Ejercicio 3.1
+let iterable = 10;
+console.log("Ejercicio 3");
+while (iterable !== 0) {
+  console.log(iterable);
+  iterable--;
+}
+
+// Ejercicio 3.2
+let mayorCien = 0;
+do {
+  mayorCien = prompt("Ingrese un número mayor a 100");
+} while (mayorCien <= 100);
+console.log("Ingresaste un número mayor a 100: " + mayorCien);
