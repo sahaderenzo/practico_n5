@@ -57,4 +57,31 @@ console.log("El número 7 es par: " + esPar(7));
 
 // Ejercicio 4.2
 let convertirCelsiusFahrenheit = (celsius) => { return (celsius * 1.8 + 32) };
-console.log("30° Celsius son equivalentes a " + convertirCelsiusFahrenheit(30) + "°"); 
+console.log("30° Celsius son equivalentes a " + convertirCelsiusFahrenheit(30) + "°");
+
+// Ejercicio 5.1
+let persona = {
+  nombre: "Ana",
+  edad: 30,
+  ciudad: "Madrid",
+  setCiudad: function (nuevaCiudad) {
+    this.ciudad = nuevaCiudad;
+  }
+};
+
+persona.setCiudad("Barcelona");
+console.log("Persona: " + persona.nombre + ", Edad: " + persona.edad + ", Ciudad: " + persona.ciudad);
+
+// Ejercicio 5.2
+let libro = {
+  titulo: "El Quijote",
+  autor: "Miguel de Cervantes",
+  anio: "1605",
+  viejoONO: function () {
+    if (this.anio > 10) {
+      return true;
+    }
+    return false
+  },
+};
+console.log("El libro '" + libro.titulo + "' es antiguo: " + libro.viejoONO());
