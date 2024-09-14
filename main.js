@@ -43,3 +43,18 @@ do {
   mayorCien = prompt("Ingrese un número mayor a 100");
 } while (mayorCien <= 100);
 console.log("Ingresaste un número mayor a 100: " + mayorCien);
+
+// Ejercicio 4.1
+function esPar(parImpar) {
+  if (parImpar % 2 === 0) {
+    return true;
+  };
+  return false;
+};
+
+console.log("El número 8 es par: " + esPar(8));
+console.log("El número 7 es par: " + esPar(7));
+
+// Ejercicio 4.2
+let convertirCelsiusFahrenheit = (celsius) => { return (celsius * 1.8 + 32) };
+console.log("30° Celsius son equivalentes a " + convertirCelsiusFahrenheit(30) + "°"); 
