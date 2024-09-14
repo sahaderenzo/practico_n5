@@ -85,3 +85,36 @@ let libro = {
   },
 };
 console.log("El libro '" + libro.titulo + "' es antiguo: " + libro.viejoONO());
+
+// Ejercicio 6.1
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let numerosDobles = numeros.map((numero) => { return numero * 2 });
+console.log("Numeros originales: " + numeros);
+console.log("Numeros multiplicados por 2: " + numerosDobles);
+
+// Ejercicio 6.2
+let pares = [];
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) {
+    pares.push(i);
+  };
+};
+console.log("Primeros 10 números pares: " + pares);
+
+//Ejercicio 7.1
+const button = document.getElementsByClassName("eje71_button")[0];
+button.addEventListener("click", (event) => {
+  event.preventDefault();
+  let ps = document.getElementsByClassName("eje71_p");
+  Array.from(ps).forEach(parrafo => {
+    parrafo.classList.add('eje71_p_blue');
+  });
+});
+
+// Ejercicio 7.2
+const button1 = document.getElementsByClassName("eje72_button")[0];
+button1.addEventListener("click", (event) => {
+  event.preventDefault();
+  let texto72 = document.getElementById("eje72_text").value;
+  alert("Has ingresado: " + texto72);
+})
