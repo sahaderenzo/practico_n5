@@ -118,3 +118,26 @@ button1.addEventListener("click", (event) => {
   let texto72 = document.getElementById("eje72_text").value;
   alert("Has ingresado: " + texto72);
 })
+
+// Ejercicio 8.1
+const ul = document.getElementsByClassName("eje81_li");
+Array.from(ul).forEach(li => {
+  li.addEventListener("click", () => {
+    console.log(li.textContent);
+  })
+})
+
+// Ejercicio 8.2
+const buttonDes = document.getElementsByClassName("eje82_button1")[0];
+buttonDes.addEventListener("click", (event) => {
+  event.preventDefault();
+  const texto82 = document.getElementById("eje82_text");
+  texto82.disabled = true;
+});
+
+const buttonHab = document.getElementsByClassName("eje82_button2")[0];
+buttonHab.addEventListener("click", (event) => {
+  event.preventDefault();
+  const texto82 = document.getElementById("eje82_text");
+  texto82.disabled = false;
+});
