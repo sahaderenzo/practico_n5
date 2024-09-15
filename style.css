@@ -2,3 +2,15 @@
     /*Ejercicio 7.1*/
     color: blue;
 }
+
+.eje9_form {
+    flex-direction: column;
+    align-items: center;
+    border: 0.2em black solid;
+    width: 35vw;
+    padding: 0.5em;
+}
+
+.eje9_p {
+    margin: 0.2em;
+}

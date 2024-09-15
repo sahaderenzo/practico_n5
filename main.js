@@ -141,3 +141,21 @@ buttonHab.addEventListener("click", (event) => {
   const texto82 = document.getElementById("eje82_text");
   texto82.disabled = false;
 });
+
+// Ejercicio 9 
+const button91 = document.getElementsByClassName("eje9_button1")[0];
+button91.addEventListener("click", (event) => {
+  event.preventDefault();
+  const email9 = document.getElementById("eje9_mail").value;
+  localStorage.setItem("email", email9);
+  const p = document.getElementsByClassName("eje9_p")[0];
+  p.textContent = "Correo guardado: " + localStorage.getItem("email");
+})
+
+const button92 = document.getElementsByClassName("eje9_button2")[0];
+button92.addEventListener("click", (event) => {
+  event.preventDefault();
+  localStorage.clear();
+  const p = document.getElementsByClassName("eje9_p")[0];
+  p.textContent = "";
+})
